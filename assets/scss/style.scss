@@ -96,11 +96,12 @@ html {
     }
 }
 
-.slider-part{
+.slider-part {
     height: 600px;
-  
+
 }
-.image-part{
+
+.image-part {
     margin-right: 50px;
     width: 30%;
     height: 550px;
@@ -108,19 +109,146 @@ html {
 
 
 }
-.product-title{
 
-  h2{
-      color: $colorBlack;
-      font-family: $font-family;
-      font-weight: 800;
-  }
-  p{
-      color:$colorGrey;
-      font-weight: 400;
-      font-size: 23px;
-  }
+.product-title {
+
+    h2 {
+        color: $colorBlack;
+        font-family: $font-family;
+        font-weight: 800;
+    }
+
+    p {
+        color: $colorGrey;
+        font-weight: 400;
+        font-size: 23px;
+    }
 }
-.hover-border-bottom{
+
+.hover-border-bottom {
     text-decoration: none;
+}
+
+.card-image-info>.img {
+
+    width: 90%;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 300ms all linear;
+
+    .img-1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 300ms all linear;
+
+
+
+    }
+
+    &:hover .img-2 {
+
+        opacity: 1;
+
+    }
+
+
+    .img-bottom {
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        background-color: white;
+        transition: 300ms all linear;
+
+
+        p {
+            opacity: 0;
+            margin-bottom: 0;
+            margin-left: 5px;
+            padding-right: 140px;
+
+        }
+
+        i {
+            margin-right: 5px;
+            opacity: 0;
+        }
+
+
+
+    }
+
+
+}
+
+.card-image-info {
+    &:hover {
+        .img-bottom {
+            height: 35px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+
+            p {
+                opacity: 1;
+
+            }
+
+            i {
+                opacity: 1;
+            }
+
+        }
+
+        .image-info-2>i {
+            opacity: 1 !important;
+            display: flex;
+            transform: translateY(-20px);
+            transition: 300ms all  linear;
+        }
+
+    }
+}
+
+.image-info {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    h5 {
+        font-family: $font-family;
+        font-size: 20px;
+    }
+
+    .image-info-2 {
+        width: auto;
+        height: 60px;
+        display: flex;
+        align-items: flex-end;
+
+        i {
+            opacity: 0;
+        }
+
+    }
+
 }

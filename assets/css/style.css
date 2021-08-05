@@ -112,3 +112,76 @@ html {
 
 .hover-border-bottom {
   text-decoration: none; }
+
+.card-image-info > .img {
+  width: 90%;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 300ms all linear; }
+  .card-image-info > .img .img-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .card-image-info > .img .img-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 300ms all linear; }
+  .card-image-info > .img:hover .img-2 {
+    opacity: 1; }
+  .card-image-info > .img .img-bottom {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    transition: 300ms all linear; }
+    .card-image-info > .img .img-bottom p {
+      opacity: 0;
+      margin-bottom: 0;
+      margin-left: 5px;
+      padding-right: 140px; }
+    .card-image-info > .img .img-bottom i {
+      margin-right: 5px;
+      opacity: 0; }
+
+.card-image-info:hover .img-bottom {
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .card-image-info:hover .img-bottom p {
+    opacity: 1; }
+  .card-image-info:hover .img-bottom i {
+    opacity: 1; }
+
+.card-image-info:hover .image-info-2 > i {
+  opacity: 1 !important;
+  display: flex;
+  transform: translateY(-20px);
+  transition: 300ms all  linear; }
+
+.image-info {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; }
+  .image-info h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; }
+  .image-info .image-info-2 {
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: flex-end; }
+    .image-info .image-info-2 i {
+      opacity: 0; }
