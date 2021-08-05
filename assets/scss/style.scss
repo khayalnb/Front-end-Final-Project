@@ -255,10 +255,7 @@ html {
 .customer-service{
     width: 100%;
     background-color:$colorBackGround;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
+    
     .a{
        
         display: flex;
@@ -277,4 +274,7 @@ html {
             }
         }
     }
+}
+.form-part{
+    display: none;
 }

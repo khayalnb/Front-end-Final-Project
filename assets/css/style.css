@@ -199,3 +199,6 @@ html {
         font-weight: 800; }
       .customer-service .a .text-part p {
         color: #868E96; }
+
+.form-part {
+  display: none; }
