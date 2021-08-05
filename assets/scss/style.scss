@@ -252,3 +252,29 @@ html {
     }
 
 }
+.customer-service{
+    width: 100%;
+    background-color:$colorBackGround;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    .a{
+       
+        display: flex;
+
+        .text-part{
+           
+            width: 250px;
+            margin-left: 10px;
+
+            h6{
+                font-family: $font-family;
+                font-weight: 800;
+            }
+            p{
+                color: $colorGrey;
+            }
+        }
+    }
+}

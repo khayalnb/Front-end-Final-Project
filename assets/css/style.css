@@ -185,3 +185,17 @@ html {
     align-items: flex-end; }
     .image-info .image-info-2 i {
       opacity: 0; }
+
+.customer-service {
+  width: 100%;
+  background-color: #F8F9FA; }
+  .customer-service .a {
+    display: flex; }
+    .customer-service .a .text-part {
+      width: 250px;
+      margin-left: 10px; }
+      .customer-service .a .text-part h6 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 800; }
+      .customer-service .a .text-part p {
+        color: #868E96; }
