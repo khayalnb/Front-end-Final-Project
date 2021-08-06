@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass assets/scss/blog.scss -o assets/css",
-    "css:watch": "npm run css && node-sass assets/scss/blog.scss -wo assets/css"
+    "css": "node-sass assets/scss/contact.scss -o assets/css",
+    "css:watch": "npm run css && node-sass assets/scss/contact.scss -wo assets/css"
   },
   "author": "Khayal",
   "license": "ISC",
