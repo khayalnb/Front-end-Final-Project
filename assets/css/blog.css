@@ -108,5 +108,59 @@ html {
         margin-right: 10px; }
 
 .nav-bottom-part {
-  border: 1px solid black;
-  background-image: url(../image/Blog/blog-2.jpg); }
+  width: 100%;
+  height: 520px;
+  background-image: url(../image/Blog/blog-2.jpg);
+  background-position: center center;
+  background-attachment: fixed; }
+
+.parallax-window {
+  width: 100%;
+  min-height: 520px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .parallax-window .location-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    padding-top: 70px; }
+    .parallax-window .location-part > ol li a {
+      color: #BCAC76;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600; }
+    .parallax-window .location-part > ol li {
+      color: #868E96;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600; }
+  .parallax-window .hero-content {
+    text-align: center;
+    margin-top: 20px; }
+    .parallax-window .hero-content .hero-heading {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900; }
+    .parallax-window .hero-content p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400; }
+
+.customer-service {
+  width: 100%;
+  background-color: #F8F9FA; }
+  .customer-service .a {
+    display: flex; }
+    .customer-service .a .text-part {
+      width: 250px;
+      margin-left: 10px; }
+      .customer-service .a .text-part h6 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 800; }
+      .customer-service .a .text-part p {
+        color: #868E96; }
+
+.form-part {
+  display: none; }
