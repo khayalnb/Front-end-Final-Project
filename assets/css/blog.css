@@ -148,6 +148,46 @@ html {
       font-family: "Roboto", sans-serif;
       font-weight: 400; }
 
+.card-photo {
+  width: 100%; }
+  .card-photo img {
+    width: 100%; }
+
+.hover_bottom {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
+  .hover_bottom :after {
+    position: absolute;
+    left: 10px;
+    content: '';
+    height: 40px;
+    width: 275px;
+    border-bottom: solid 3px #019fb6;
+    transition: left 250ms ease-in-out, right 250ms ease-in-out;
+    opacity: 0; }
+  .hover_bottom:hover {
+    opacity: 1; }
+
+.hover_a-bottom {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #BCAC76; }
+  .hover_a-bottom :after {
+    position: absolute;
+    left: 10px;
+    content: '';
+    height: 40px;
+    width: 275px;
+    border-bottom: solid 3px #019fb6;
+    transition: left 250ms ease-in-out, right 250ms ease-in-out;
+    opacity: 0;
+    color: #BCAC76; }
+  .hover_a-bottom:hover {
+    opacity: 1;
+    color: #BCAC76; }
+
 .customer-service {
   width: 100%;
   background-color: #F8F9FA; }
