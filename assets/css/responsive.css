@@ -19,7 +19,11 @@
     .card-image-info .img-bottom i {
       opacity: 1 !important; }
   .card-image-info .image-info i {
-    opacity: 1 !important; } }
+    opacity: 1 !important; }
+  .map {
+    height: 300px  !important; }
+  .contact_right-part {
+    display: none; } }
 
 @media only screen and (max-width: 767px) {
   .nav-top {
@@ -42,4 +46,8 @@
     .card-image-info .img-bottom i {
       opacity: 1 !important; }
   .card-image-info .image-info i {
-    opacity: 1 !important; } }
+    opacity: 1 !important; }
+  .map {
+    height: 700px  !important; }
+  .contact_right-part {
+    display: none; } }
