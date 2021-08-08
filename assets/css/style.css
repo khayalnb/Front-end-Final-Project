@@ -19,7 +19,11 @@
     .card-image-info .img-bottom i {
       opacity: 1 !important; }
   .card-image-info .image-info i {
-    opacity: 1 !important; } }
+    opacity: 1 !important; }
+  .map {
+    height: 300px  !important; }
+  .contact_right-part {
+    display: none; } }
 
 @media only screen and (max-width: 767px) {
   .nav-top {
@@ -42,7 +46,11 @@
     .card-image-info .img-bottom i {
       opacity: 1 !important; }
   .card-image-info .image-info i {
-    opacity: 1 !important; } }
+    opacity: 1 !important; }
+  .map {
+    height: 700px  !important; }
+  .contact_right-part {
+    display: none; } }
 
 html {
   scroll-behavior: smooth; }
@@ -226,15 +234,15 @@ html {
 .customer-service {
   width: 100%;
   background-color: #F8F9FA; }
-  .customer-service .a {
+  .customer-service .service-customer {
     display: flex; }
-    .customer-service .a .text-part {
+    .customer-service .service-customer .text-part {
       width: 250px;
       margin-left: 10px; }
-      .customer-service .a .text-part h6 {
+      .customer-service .service-customer .text-part h6 {
         font-family: "Roboto", sans-serif;
         font-weight: 800; }
-      .customer-service .a .text-part p {
+      .customer-service .service-customer .text-part p {
         color: #868E96; }
 
 .form-part {
