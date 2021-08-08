@@ -127,3 +127,22 @@
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   margin-top: 25px; }
+
+.manager-info blockquote h6 {
+  color: #BCAC76;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600; }
+
+.manager-info .manager-text > p {
+  color: #868E96;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600; }
+
+.employe_info h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 15px; }
+
+.employe_info p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600; }
