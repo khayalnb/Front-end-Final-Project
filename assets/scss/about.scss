@@ -157,3 +157,31 @@
         }
     }
 }
+
+.customer-service{
+    width: 100%;
+    background-color:$colorBackGround;
+    
+    .a{
+       
+        display: flex;
+
+        .text-part{
+           
+            width: 250px;
+            margin-left: 10px;
+
+            h6{
+                font-family: $font-family;
+                font-weight: 800;
+            }
+            p{
+                color: $colorGrey;
+            }
+        }
+    }
+}
+.form-part{
+    display: none;
+}
+
