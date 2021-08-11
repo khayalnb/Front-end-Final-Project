@@ -24,20 +24,20 @@
   <!--Main CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
-		
-		function Delete(e){
-			let items = [];
-			JSON.parse(localStorage.getItem('items')).map(data=>{
-				if(data.id != e.parentElement.parentElement.children[0].textContent){
-					
-					items.push(data);
 
-				}
-			});
-			localStorage.setItem('items',JSON.stringify(items));
-			window.location.reload();
-		};
-	</script>
+    function Delete(e) {
+      let items = [];
+      JSON.parse(localStorage.getItem('items')).map(data => {
+        if (data.id != e.parentElement.parentElement.children[0].textContent) {
+
+          items.push(data);
+
+        }
+      });
+      localStorage.setItem('items', JSON.stringify(items));
+      window.location.reload();
+    };
+  </script>
 </head>
 
 <body>
@@ -78,10 +78,10 @@
     <!--Nav-top-end-->
 
     <!--Nav-Bottom start-->
-    
-         
-         
-    <div class="container-fluid mt-3 mb-3">
+
+
+
+    <div class="container-fluid mt-3 mb-3 navbar-bottom">
       <div class="row d-flex">
         <div class="col-12 col-lg-10">
           <div class="row p-0 nav-bottom-left">
@@ -99,7 +99,8 @@
               </div>
 
             </div>
-            <div class="col-12 col-sm-1 test p-0"><span class="icon_hover">Shop <i class="fas fa-angle-down "></i></span>
+            <div class="col-12 col-sm-1 test p-0"><span class="icon_hover">Shop <i
+                  class="fas fa-angle-down "></i></span>
               <div class="menu-change menu-2">
                 <div class="shop">
                   <div class="shop-left">
@@ -113,7 +114,7 @@
                       <li>Subcategories</li>
                     </ul>
                   </div>
-                  <div class="shop-average"> 
+                  <div class="shop-average">
                     <ul>
                       <li style="color: black;">Shop pages</li>
                       <li>Full width</li>
@@ -128,59 +129,218 @@
                     <img src="assets/image/About/kyle-loftus-596319-unsplash-cropped.jpg" alt="">
                   </div>
                 </div>
-               
-
               </div>
 
             </div>
-            <div class="col-12 col-sm-1 test p-0 me-1"><span class="icon_hover">Icons <i class="fas fa-angle-down "></i></span>
-              <ul class="menu-change">
-                <li>Home 1 - Fashion</li>
-                <li>Home 2 - Fashion</li>
-                <li>Home 3 - Design</li>
-                <li>Home 4 - Design</li>
-              </ul>
+            <div class="col-12 col-sm-1 test p-0 me-1"><span class="icon_hover">Icons <i
+                  class="fas fa-angle-down "></i></span>
+              <div class="menu-change icons">
+                <div class="icons">
+                  <div class="dropdown-menu py-lg-0 show" style=" min-width: 750px;">
+                    <div class="row py-lg-5 px-4">
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/trousers-svgrepo-com.svg" alt="">
+                          <h6>Trousers</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/jacket-svgrepo-com.svg" alt="">
+                          <h6>Jackets</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/t-shirt-svgrepo-com.svg" alt="">
+                          <h6>T-Shirts</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/shirt-svgrepo-com.svg" alt="">
+                          <h6>Shirts</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/pullover-sweater-svgrepo-com (1).svg" alt="">
+                          <h6>Pullovers</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/scarf-svgrepo-com.svg" alt="">
+                          <h6>Scarfs</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/shirt-svgrepo-com.svg" alt="">
+                          <h6>Shorts</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/men-underwear.svg" alt="">
+                          <h6>Underwear</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/watch-watches-svgrepo-com.svg" alt="">
+                          <h6>Watches</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/bag-svgrepo-com (1).svg" alt="">
+                          <h6>Bags</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/cap-svgrepo-com.svg" alt="">
+                          <h6>Caps</h6>
+                        </a></div>
+                      <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset"
+                          href="category-categories.html">
+                          <img src="assets/image/SVG/accessory-elegant-svgrepo-com.svg" alt="">
+                          <h6>Accessories</h6>
+                        </a></div>
+                    </div>
+                    <div style="background-color: burlywood;" class="p-3 text-center text-sm d-none d-lg-block">
+                      <p class="mb-0">Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until
+                        Jun. 15! </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
             <div class="col-12 col-sm-1 test p-0 me-1"><span class="icon_hover"> Pages <i
                   class="fas fa-angle-down "></i></span>
-              <ul class="menu-change">
-                <li>Home 1 - Fashion</li>
-                <li>Home 2 - Fashion</li>
-                <li>Home 3 - Design</li>
-                <li>Home 4 - Design</li>
-              </ul>
+              <div class="menu-change">
+                <ul>
+                  <li>Home 1 - Fashion</li>
+                  <li>Home 2 - Fashion</li>
+                  <li>Home 3 - Design</li>
+                  <li>Home 4 - Design</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12 col-sm-1 p-0 test me-1"><span class="icon_hover">Docs <i class="fas fa-angle-down "></i></span>
-              <ul class="menu-change">
-                <li>Home 1 - Fashion</li>
-                <li>Home 2 - Fashion</li>
-                <li>Home 3 - Design</li>
-                <li>Home 4 - Design</li>
-              </ul>
+            <div class="col-12 col-sm-1 p-0 test me-1"><span class="icon_hover">Docs <i
+                  class="fas fa-angle-down "></i></span>
+              <div class="menu-change">
+                <div class="docs">
+                  <ul>
+                    <li>Introduction</li>
+                    <li>Directory</li>
+                    <li>Gulp</li>
+                    <li>Home 4 - Design</li>
+                    <li>Customizing CSS</li>
+                    <li>Credicts</li>
+                    <li>Changelog</li>
+                    <li>Bootstrap</li>
+                    <li>Theme</li>
+                  </ul>
+                </div>
+
+              </div>
             </div>
             <div class="col-12 col-sm-4 d-flex justify-content-end">
               <div class="search-box">
                 <input class="search" type="search" placeholder="Search">
                 <i style="cursor: pointer;" class="fas fa-search"></i>
               </div>
-               
-              </div>
+
+            </div>
           </div>
         </div>
         <div class="col-12 col-lg-2 d-flex justify-content-around align-items-center ">
           <div>
-            <i class="far fa-user fa-lg"></i>
-           
+            <i id="myBtn" class="far fa-user fa-lg"></i>
+            
+            <div id="myModal" class="modal">
+
+       
+              
+              <div class="modal-contentst">
+                <div class="modal-body p-5">
+                  <ul class="nav list-inline" role="tablist">
+                    <li class="list-inline-item"><a class="nav-link nav-link-lg active" style="color: burlywood;" data-toggle="tab" href="#loginModalTabLogin" role="tab" id="loginModalLinkLogin" aria-controls="loginModalTabLogin" aria-selected="true">Login</a></li>
+                    <li class="list-inline-item"><a class="nav-link nav-link-lg" style="color: burlywood;" data-toggle="tab" href="#loginModalTabRegister" role="tab" id="loginModalLinkRegister" aria-controls="loginModalTabRegister" aria-selected="false">Register</a></li>
+                    <i style="margin-top: 15px; transform: translateX(250px);" class="fas fa-times close"></i>
+                  </ul>
+                  <hr class="mb-3">
+                  <div class="tab-content">
+                    <div class="tab-pane active fade show px-3" id="loginModalTabLogin" role="tabpanel" aria-labelledby="loginModalLinkLogin">
+                      <form action="customer-orders.html" method="get">
+                        <div class="form-group">
+                          <label class="form-label" for="email">Email</label>
+                          <input class="form-control" id="email" type="text">
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col">
+                              <label class="form-label" for="loginPassword"> Password</label>
+                            </div>
+                            <div class="col-auto"><a class="form-text small" href="#">Forgot password?</a></div>
+                          </div>
+                          <input class="form-control" name="loginPassword" id="loginPassword" placeholder="Password" type="password" required="" data-msg="Please enter your password">
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" id="loginRemember" type="checkbox">
+                            <label class="custom-control-label text-muted" for="loginRemember"> <span class="text-sm">Remember me for 30 days</span></label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-block btn-outline-dark" type="submit"><i class="fa fa-sign-in-alt mr-2"></i> Log in</button>
+                        </div>
+                      </form>
+                     
+                      <div class="text-center">
+                        <button class="btn btn btn-outline-primary letter-spacing-0" data-toggle="tooltip" title="" data-original-title="Connect with Facebook"><i class="fa-fw fa-facebook-f fab"></i><span class="sr-only">Connect with Facebook</span></button>
+                        <button class="btn btn btn-outline-muted letter-spacing-0" data-toggle="tooltip" title="" data-original-title="Connect with Google"><i class="fa-fw fa-google fab"></i><span class="sr-only">Connect with Google</span></button>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade px-3" id="loginModalTabRegister" role="tabpanel" aria-labelledby="loginModalLinkRegister">
+                      <p class="text-muted text-sm">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit.                                            </p>
+                      <form action="customer-orders.html" method="get">
+                        <div class="form-group">
+                          <label class="form-label" for="registerName">Name</label>
+                          <input class="form-control" id="registerName" type="text">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="registerEmail">Email</label>
+                          <input class="form-control" id="registerEmail" type="text">
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="registerPassword">Password</label>
+                          <input class="form-control" id="registerPassword" type="password">
+                        </div>
+                        <div class="form-group text-center">
+                          <button class="btn btn-block btn-outline-dark" type="submit"><i class="far fa-user mr-2"></i>Register                       </button>
+                        </div>
+                      </form>
+                      <hr class="my-3 hr-text letter-spacing-2" data-content="OR CONNECT WITH">
+                      <div class="text-center">
+                        <button class="btn btn btn-outline-primary letter-spacing-0" data-toggle="tooltip" title="" data-original-title="Connect with Facebook"><i class="fa-fw fa-facebook-f fab"></i><span class="sr-only">Connect with Facebook</span></button>
+                        <button class="btn btn btn-outline-muted letter-spacing-0" data-toggle="tooltip" title="" data-original-title="Connect with Google"><i class="fa-fw fa-google fab"></i><span class="sr-only">Connect with Google</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
           </div>
-          <div  class="likes">
+          <div class="likes">
             <i class="far fa-heart fa-lg main-1"></i>
             <div class="heart-count">
-                 0
+              0
             </div>
           </div>
-          <div class="shopping iconShopping " >
+          <div class="shopping iconShopping ">
             <i class="fas fa-shopping-bag fa-lg main-2"></i>
-            <div class="shopping-count"><p>0</p></div>
+            <div class="shopping-count">
+              <p>0</p>
+            </div>
           </div>
           <div>
             <i class="fas fa-bars"></i>
@@ -460,7 +620,7 @@
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Books</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -488,7 +648,7 @@
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Another Chair</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -516,7 +676,7 @@
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Your New Chair</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -534,7 +694,7 @@
       <!--Product Card row 1 end-->
 
       <!--Product Card  row 2 START-->
-      <div class="row mt-5">
+      <div class="row mt-5 mb-5">
         <div data-aos="zoom-in" class="col-sm-3 ">
           <div class="card-image-info">
             <div class="img">
@@ -542,14 +702,14 @@
               <img class="img-2" src="assets/image/Card  image -2/card_5/clock-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
             </div>
             <div class="image-info">
               <div class="image-info-1 itemInfo">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Clock Multicolor</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -570,14 +730,14 @@
               <img class="img-2" src="assets/image/Card  image -2/card_6/clock3-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Clock</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -605,7 +765,7 @@
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Accessory Box</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -626,14 +786,14 @@
               <img class="img-2" src="assets/image/Card  image -2/card_8/box-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
             </div>
             <div class="image-info">
               <div class="image-info-1">
-                <h5 class="mt-1">Norwegg Chair</h5>
+                <h5 class="mt-1">Beige</h5>
                 <span>$40.00</span>
               </div>
               <div class="image-info-2">
@@ -653,13 +813,13 @@
   </section>
   <!--Product Card End-->
   <div class="cartBox">
-		<div class="cart">
-			<i class="fas fa-times"></i>
-			<h1>Cart</h1>
-			<table></table>
-		</div>
-	</div>
-  <section>
+    <div class="cart">
+      <i class="fas fa-times"></i>
+      <h1>Cart</h1>
+      <table></table>
+    </div>
+  </div>
+  <section class="Summers">
     <div class="container mb-5">
       <div class="position-relative text-center" style="background: #eae0bd; ">
         <div class="position-absolute w-100 h-100 overflow-hidden">

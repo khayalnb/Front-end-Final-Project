@@ -61,7 +61,7 @@ window.onload = function(){
 	//adding cartbox data in table
 	const cardBoxTable = cartBox.querySelector('table');
 	let tableData = '';
-	tableData += '<tr><th>S no.</th><th>Item Name</th><th>Item No</th><th>item Price</th><th></th></tr>';
+	tableData += '<tr><th>S no.</th> <th>Item Name</th>   <th>Item No</th>  <th>item Price</th><th></th></tr>';
 	if(JSON.parse(localStorage.getItem('items'))[0] === null){
 		tableData += '<tr><td colspan="5">No items found</td></tr>'
 	}else{
