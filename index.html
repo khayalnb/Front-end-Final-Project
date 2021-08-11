@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varkala E-commerce Theme</title>
+  <title>Varkala Index</title>
   <!--Aos-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Hover Card-->
@@ -23,6 +23,21 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--Main CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+		
+		function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					
+					items.push(data);
+
+				}
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+	</script>
 </head>
 
 <body>
@@ -63,17 +78,116 @@
     <!--Nav-top-end-->
 
     <!--Nav-Bottom start-->
-    <div class="container-fluid mb-4">
-      <div class="row">
-        <!-- <div class="col-md-2 col-sm-2  col-2 ">Salam</div>
-        <div class="col-md-2 col-sm-2 col-2 bg-pr">Salam</div>
-        <div class="col-md-2 col-sm-2  col-2 bg-secondary">Salam</div>
-        <div class="col-md-2 col-sm-2  col-2 bg-primary">Salam</div>
-        <div class="col-md-2 col-sm-2 col-2 bg-secondary">Salam</div>
-        <div class="col-md-2 col-sm-2 col-2 bg-primary">Salam</div> -->
+    
+         
+         
+    <div class="container-fluid mt-3 mb-3">
+      <div class="row d-flex">
+        <div class="col-12 col-lg-10">
+          <div class="row p-0 nav-bottom-left">
+            <div class="col-12 col-sm-2 d-flex justify-content-center">VARKALA</div>
+            <div class="col-12 col-sm-1 p-0 me-1 ">
+              <span class="icon_hover">Home <i class="fas fa-angle-down"></i>
+              </span>
+              <div class="menu-change">
+                <ul>
+                  <li>Home 1 - Fashion</li>
+                  <li>Home 2 - Fashion</li>
+                  <li>Home 3 - Design</li>
+                  <li>Home 4 - Design</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-1 test p-0"><span class="icon_hover">Shop <i class="fas fa-angle-down "></i></span>
+              <div class="menu-change menu-2">
+                <div class="shop">
+                  <div class="shop-left">
+                    <ul>
+                      <li style="color: black;">Shop pages</li>
+                      <li>Full width</li>
+                      <li>Full width with category menu </li>
+                      <li>Full width with gig Products</li>
+                      <li>Fixed width </li>
+                      <li>Fixed width & masonry layout </li>
+                      <li>Subcategories</li>
+                    </ul>
+                  </div>
+                  <div class="shop-average"> 
+                    <ul>
+                      <li style="color: black;">Shop pages</li>
+                      <li>Full width</li>
+                      <li>Full width with category menu </li>
+                      <li>Full width with gig Products</li>
+                      <li>Fixed width </li>
+                      <li>Fixed width & masonry layout </li>
+                      <li>Subcategories</li>
+                    </ul>
+                  </div>
+                  <div class="shop-image">
+                    <img src="assets/image/About/kyle-loftus-596319-unsplash-cropped.jpg" alt="">
+                  </div>
+                </div>
+               
+
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-1 test p-0 me-1"><span class="icon_hover">Icons <i class="fas fa-angle-down "></i></span>
+              <ul class="menu-change">
+                <li>Home 1 - Fashion</li>
+                <li>Home 2 - Fashion</li>
+                <li>Home 3 - Design</li>
+                <li>Home 4 - Design</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-1 test p-0 me-1"><span class="icon_hover"> Pages <i
+                  class="fas fa-angle-down "></i></span>
+              <ul class="menu-change">
+                <li>Home 1 - Fashion</li>
+                <li>Home 2 - Fashion</li>
+                <li>Home 3 - Design</li>
+                <li>Home 4 - Design</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-1 p-0 test me-1"><span class="icon_hover">Docs <i class="fas fa-angle-down "></i></span>
+              <ul class="menu-change">
+                <li>Home 1 - Fashion</li>
+                <li>Home 2 - Fashion</li>
+                <li>Home 3 - Design</li>
+                <li>Home 4 - Design</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-end">
+              <div class="search-box">
+                <input class="search" type="search" placeholder="Search">
+                <i style="cursor: pointer;" class="fas fa-search"></i>
+              </div>
+               
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 d-flex justify-content-around align-items-center ">
+          <div>
+            <i class="far fa-user fa-lg"></i>
+           
+          </div>
+          <div  class="likes">
+            <i class="far fa-heart fa-lg main-1"></i>
+            <div class="heart-count">
+                 0
+            </div>
+          </div>
+          <div class="shopping iconShopping " >
+            <i class="fas fa-shopping-bag fa-lg main-2"></i>
+            <div class="shopping-count"><p>0</p></div>
+          </div>
+          <div>
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--Nav-Bottom-End-->
+      <!--Nav-Bottom-End-->
   </header>
   <!--Slider Start-->
   <section>
@@ -96,7 +210,7 @@
                     <div>
                       <p>TIME IS ALMOST UP</p>
                       <h2 class="display-3 mt-4 mb-4" style="line-height: 1 ">Design clocks<br> on sale</h2>
-                      <a  href="#">Start shopping</a>
+                      <a href="#">Start shopping</a>
                     </div>
                   </div>
                   <div class="myImage">
@@ -111,8 +225,9 @@
                     <div>
                       <h2>OUR ALL-TIME FAVOURITES</h2>
                       <h2 class="display-3" style="line-height: 1">Black & White</h2>
-                      <p class="text-muted mb-5">The bedding was hardly able to cover it and seemed ready to slide off any<br> moment. His many legs, pit</p>
-                      <a  href="#">Discover more</a>
+                      <p class="text-muted mb-5">The bedding was hardly able to cover it and seemed ready to slide off
+                        any<br> moment. His many legs, pit</p>
+                      <a href="#">Discover more</a>
                     </div>
                   </div>
                   <div class="myImage">
@@ -120,14 +235,15 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item" >
+              <div class="carousel-item">
                 <div class="corusel-part">
                   <div class=" myTitle">
                     <div>
                       <p class="subtitle letter-spacing-3 mb-3 text-dark font-weight-light">Our all-time favourites</p>
                       <h2 class="display-3" style="line-height: 1">Boxxez</h2>
-                      <p class="text-muted mb-5">The bedding was hardly able to cover it and seemed ready to slide off any<br> moment. His many legs, pit</p>
-                      <a  href="#">Discover more</a>
+                      <p class="text-muted mb-5">The bedding was hardly able to cover it and seemed ready to slide off
+                        any<br> moment. His many legs, pit</p>
+                      <a href="#">Discover more</a>
                     </div>
                   </div>
                   <div class="myImage">
@@ -301,7 +417,7 @@
             href="#">All
             products</a></div>
       </div>
-      <div class="row p-0">
+      <div class="row p-0 itemsBox">
         <div data-aos="zoom-in" class="col-sm-3">
           <div class="card-image-info">
             <div class="img">
@@ -309,7 +425,7 @@
               <img class="img-2" src="assets/image/Card  image -2/card_1/chair-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
@@ -337,7 +453,7 @@
               <img class="img-2" src="assets/image/Card  image -2/card_2/book-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
@@ -365,7 +481,7 @@
               <img class="img-2" src="assets/image/Card  image -2/card_3/chair2-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
@@ -393,7 +509,7 @@
               <img class="img-2" src="assets/image/Card  image -2/card_4/chair3-3.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="attToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
@@ -432,7 +548,7 @@
               </div>
             </div>
             <div class="image-info">
-              <div class="image-info-1">
+              <div class="image-info-1 itemInfo">
                 <h5 class="mt-1">Norwegg Chair</h5>
                 <span>$40.00</span>
               </div>
@@ -482,7 +598,7 @@
               <img class="img-2" src="assets/image/Card  image -2/card_7/box-2.jpg" alt="">
 
               <div class="img-bottom">
-                <p>Add to Cart</p>
+                <p class="addToCart">Add to Cart</p>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-expand-arrows-alt"></i>
               </div>
@@ -536,7 +652,13 @@
     <!--Product Card Row 2 END-->
   </section>
   <!--Product Card End-->
-
+  <div class="cartBox">
+		<div class="cart">
+			<i class="fas fa-times"></i>
+			<h1>Cart</h1>
+			<table></table>
+		</div>
+	</div>
   <section>
     <div class="container mb-5">
       <div class="position-relative text-center" style="background: #eae0bd; ">
@@ -687,6 +809,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -728,8 +851,9 @@
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    </script>
   <!--Main JS-->
+  <script src="assets/js/basket.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
